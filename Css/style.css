@@ -110,7 +110,7 @@ html {
   background-color: hsl(170, 57%, 21%);
 }
 
-@media (max-width: 24em) {
+@media (max-width: 35em) {
   .container {
     width: 37.5rem;
   }
