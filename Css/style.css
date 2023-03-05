@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat";
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  max-width: 144rem;
+}
+
+.card {
+  width: 40%;
+  margin: auto;
+  display: grid;
+  resize: none;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 1.6rem;
+}
+
+.perfume-img {
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  gap: 2rem;
+}
+
+.header {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.5rem;
+}
+
+.heading {
+  font-family: "Fraunces";
+  font-size: 3.3rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.description {
+  font-size: 1.4rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.price {
+  font-family: "Fraunces";
+  font-size: 3rem;
+  font-weight: 500;
+  color: hsl(158, 36%, 37%);
+}
+
+.markdown-price {
+  font-size: 1.2rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.add-to-cart:link,
+.add-to-cart:visited {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #fff;
+  background: none;
+  background-color: hsl(158, 36%, 37%);
+  padding: 1.4rem;
+  border-radius: 1.2rem;
+  border: none;
+  text-decoration: none;
+}
+
+.add-to-cart:hover,
+.add-to-cart:active {
+  cursor: pointer;
+  background-color: hsl(170, 57%, 21%);
+}
+
+@media (max-width: 24em) {
+  .container {
+    width: 37.5rem;
+  }
+
+  .header {
+    margin-top: 0;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .right {
+    margin-top: 1.5rem;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    width: 94%;
+  }
+
+  .perfume-img {
+    content: url("images/image-product-mobile.jpg");
+  }
+}
